@@ -1,0 +1,102 @@
+<div class="panel-group" id="accordion">
+    <a class="open-close" data-toggle="collapse"   data-target="#collapseOne" href="#collapseOne">
+      <div class="panel-default" id="panel1">
+        <div class="panel-heading panel-heading-before">
+          <h4 class="panel-title">
+            Appropriations
+          </h4>
+          <span class="arrow arrow-right"></span>
+        </div>
+      </a>
+        <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body">
+              <ul id="appropriations-collapse">
+                <li>Member, Subcommittee on Commerce, Justice, Science, and Related Agencies</li>
+                <li>Member, Subcommittee on Department of the Interior, Environment, and Related Agencies</li>
+                <li>Member, Subcommittee on Financial Services and General Government</li>
+                <li>Member, Subcommittee on Legislative Branch</li>
+                <li>Member, Subcommittee on State, Foreign Operations, and Related Programs</li>
+                <li>
+                  <a class="committee__link" href="https://www.appropriations.senate.gov/" target="_blank">Appropriations</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+    </div>
+    <a class="open-close" data-toggle="collapse" data-target="#collapseTwo" href="#collapseTwo" class="collapsed">
+      <div class="panel-default" id="panel2">
+          <div class="panel-heading panel-heading-before">
+            <h4 class="panel-title">
+              Banking, Housing, &amp; Urban Affairs
+            </h4>
+            <span class="arrow arrow-right"></span>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="banking-collapse">
+                  <li>Ranking Member, Subcommittee on Securities, Insurance, and Investment</li>
+                  <li>Member, Subcommittee on National Security and International Trade and Finance</li>
+                  <li>Member, Subcommittee on Financial Institutions and Consumer Protection</li>
+                  <li>Member, Subcommittee on Securities, Insurance, and Investment</li>
+                  <li><a class="committee__link" href="https://www.banking.senate.gov/" target="_blank">Banking, Housing, &amp; Urban Affairs</a></li>
+                </ul>
+            </div>
+          </div>
+      </div>
+    </a>
+    <a class="open-close" data-toggle="collapse" data-target="#collapseThree" href="#collapseThree" class="collapsed">
+      <div class="panel-default" id="panel3">
+          <div class="panel-heading panel-heading-before">
+            <h4 class="panel-title">
+              Environment and Public Works
+            </h4>
+            <span class="arrow arrow-right"></span>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="environment-collapse">
+                  <li>Member, Subcommittee on Fisheries, Water, and Wildlife</li>
+                  <li>Member, Subcommittee on Transportation and Infrastructure</li>
+                  <li><a class="committee__link" href="https://www.epw.senate.gov/" target="_blank">Environment and Public Works</a></li>
+                </ul>
+            </div>
+          </div>
+      </div>
+    </a>
+</div>
+
+
+<style>
+.panel-heading-before:before {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid grey;
+    right: 5rem;
+    background-color: transparent;
+}
+.panel-heading-after:after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-top: 5px solid grey;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+    transform: translate(0, -13px);
+    right: 5rem;
+    background-color: transparent;
+}
+</style>
+
+<script>
+  $('.panel-heading').on('click', function(){
+		this.classList.toggle('panel-heading-before')
+		this.classList.toggle('panel-heading-after')
+	})
+</script>
